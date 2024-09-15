@@ -1,0 +1,12 @@
+export const imagenes = ["https://storage.googleapis.com/gifsbugs/1_genius_335x474.gif",
+    "https://storage.googleapis.com/gifsbugs/2_epifania.gif",
+    "https://storage.googleapis.com/gifsbugs/3_0000.gif",
+    "https://storage.googleapis.com/gifsbugs/4_disorder_678x960.gif",
+    "https://storage.googleapis.com/gifsbugs/5_postergado_335x470.gif",
+    "https://storage.googleapis.com/gifsbugs/6_fulgente.gif",
+    "https://storage.googleapis.com/gifsbugs/7_ductil_335x470.gif",
+    "https://storage.googleapis.com/gifsbugs/8_doom_335x474.gif",
+    "https://storage.googleapis.com/gifsbugs/9_error404_335x470.gif",
+    "https://storage.googleapis.com/gifsbugs/10_condiciones.gif",
+    "https://storage.googleapis.com/gifsbugs/11_desconozco.gif",
+    "https://storage.googleapis.com/gifsbugs/12_soldador.gif",];

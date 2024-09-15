@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "OCR A Extended";
+  src: url("/font/OCRAEXT.TTF");
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    /* justify-content: center; */
+    background-color: black;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    background-color: black;
+    transition: background-image 3.5s ease-in-out;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.titleContainer {
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.cardsContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.cardPressed {
+    width: 100vw;
+    display: none;
+    justify-content: center;
+}
+
+.poema {
+    color: whitesmoke;
+    font-family: "OCR A Extended", monospace;
+    font-weight: 500;
+    /* border: 1px solid whitesmoke; */
+    overflow-y: scroll;
+}
+
+.poema::-webkit-scrollbar {
+    width: 0px;
+}
+
+.container {
+    width: 100%; 
+}
+
+.carta {
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icos {
+    color: whitesmoke;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 767px) {
+    .texto {
+        margin-top: 2%;
+        color: whitesmoke;
+        font-size: 16px;
+        font-family: "OCR A Extended", monospace;
+        font-weight: 300;
+    }
+
+    .cardsContainer {
+        height: 70vh;
+    }
+
+    .cardPressed {
+        height: 100vh;
+        position: relative;
+        
+    }
+
+    .carta {
+        width: 100%;
+    }
+
+    .poema {
+        margin: 5px;
+        position: absolute;
+        height: 88vh;
+        width: 96vw;
+        overflow-y: scroll;
+    }
+    .imgSelected {
+        /* position: absolute; */
+        height: 91vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+    .btn-cerrar {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: transparent;
+        color: whitesmoke;
+        border: 1px solid whitesmoke;
+        border-radius: 8px;
+        width: 10%;
+        height: 5%;
+        z-index: 10;
+    }
+
+    .imagen {
+        height: 393.42px;
+        width: 278.05px;
+    }
+}
+
+    /* Para alguna que otra tablet*/
+@media (min-width: 768px) {
+    .texto {
+        margin-top: 1em;
+        color: whitesmoke;
+        font-size: 24px;
+        font-family: "OCR A Extended", monospace;
+        font-weight: 500;
+    }   
+    .cardsContainer {
+        height: 80vh;
+    }
+    .carta {
+        width: 50%;
+    }
+    .imagen {
+        height: 474px;
+        width: 335px;
+    }
+}
+  
+    /* Para dispositivos de escritorio */
+@media (min-width: 1200px) {
+    .texto {
+        margin-top: 1em;
+        color: whitesmoke;
+        font-size: 24px;
+        font-family: "OCR A Extended", monospace;
+        font-weight: 500;
+    }   
+    .cardsContainer {
+        height: 80vh;
+    }
+    .cardPressed {
+        height: 100vh;
+        align-items: center;
+        position: relative;
+    }
+    .poema {
+        position: absolute;
+        height: 568px;
+        width: 402px;
+    }
+    .btn-cerrar {
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        background-color: transparent;
+        color: whitesmoke;
+        border: 1px solid whitesmoke;
+        border-radius: 8px;
+        width: 5%;
+        height: 5%;
+        z-index: 10;
+    }
+
+    .btn-cerrar i {
+        font-size: 24px;
+    }
+    .carta {
+        width: 33.3%;
+    }
+
+    .imagen {
+        height: 474px;
+        width: 335px;
+        cursor: pointer;
+        
+    }
+
+    .imgSelected {
+        height: 568px;
+        width: 402px;
+        border-radius: 8px;
+    }
+
+    .imagen:hover {
+        border: 1px solid white;
+        animation: latido 1.2s ease-in infinite forwards;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.966);
+    }
+}
+
+  
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    5% {
+        transform: scale(1.05);
+        box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.966);
+    }
+    15% {
+        transform: scale(1);
+        box-shadow: 2px 2px 0px rgba(255, 255, 255, 0.966);
+    }
+    20% {
+        transform: scale(1.05);
+        box-shadow: 2px 2px 35px rgba(255, 255, 255, 0.966);
+    }
+
+}

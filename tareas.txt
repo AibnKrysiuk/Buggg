@@ -1,0 +1,7 @@
+escribir poemas  ---- hecho
+cambiar imagenes ---- hecho
+escribir el poema que va con la imagen ---- hecho
+
+sonido para tablet y para celu ---- hecho
+sonido para pc ---- hecho
+ajustar tamaño de imagenes para diferentes dispositivos
