@@ -119,6 +119,7 @@ footer {
     }
 
     .poema {
+        font-size: 14px;
         margin: 5px;
         position: absolute;
         height: 88vh;
