@@ -128,7 +128,7 @@ footer {
     }
     .imgSelected {
         /* position: absolute; */
-        opacity: 0.3;
+        /* opacity: 0.3; */
         height: 91vh;
         width: 100vw;
         object-fit: cover;
