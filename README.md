@@ -1,4 +1,4 @@
-Buggg, Galeria Interactiva de Arte y Poesía.
+## BUG (Galeria Interactiva de Arte y Poesía).
 
 Este proyecto es una plataforma web interactiva diseñada para [Felix](https://linktr.ee/fffelix), 
 donde se exhiben ilustraciones digitales en formato de cartas visuales y una colección de poesía original. 
